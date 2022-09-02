@@ -7,7 +7,7 @@ pipeline {
                         sh 'cp -R helm/* .'
 		        sh 'ls -ltr'
                         sh 'pwd'
-                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=hub.docker.com/repository/docker/vrbabu/brownbench-buildpush --set image.tag=8'
+                        sh '/usr/local/bin/helm upgrade --install petclinic-app petclinic  --set image.repository=vrbabu/brownbench-buildpush --set image.tag=8'
               			
             }           
         }
